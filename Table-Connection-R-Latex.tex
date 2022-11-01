@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola}
+\usepackage{lastpage}
+\usepackage[natbibapa]{apacite}
+\usepackage[
+  a4paper,
+  margin=1in,
+  headsep=4pt, % separation between header rule and text
+]{geometry}
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[C]{%
+% \footnotesize\sffamily
+%\yourname\quad
+%web: \textcolor{blue}{\itshape\yourweb}\quad
+% \textcolor{blue}{\youremail}}
+%\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+\newcommand{\soptitle}{R-to-Latex (Stargazer Table)\\}
+
+\newcommand{\yourname}{Kao, Hsuan-Chen}
+\newcommand{\youremail}{justinkao44@utexas.edu}
+%\newcommand{\yourweb}{https://www.abcd.com/}
+
+\usepackage{setspace}
+\singlespacing
+\begin{document}%book, eport, letter
+\pagenumbering{gobble} %Remove Page Number 
+\begin{center}
+	\Large\soptitle
+	\large  \yourname \\ \normalsize \youremail
+\end{center}
+	\hrule
+	\vspace{1pt}
+	\hrule height 1pt
+	
+	\bigskip
+
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+Statistic & \multicolumn{1}{c}{N} & \multicolumn{1}{c}{Mean} & \multicolumn{1}{c}{St. Dev.} & \multicolumn{1}{c}{Min} & \multicolumn{1}{c}{Max} \\ 
+\hline \\[-1.8ex] 
+Sales & 400 & 7.496 & 2.824 & 0.000 & 16.270 \\ 
+CompPrice & 400 & 124.975 & 15.335 & 77 & 175 \\ 
+Income & 400 & 68.658 & 27.986 & 21 & 120 \\ 
+Advertising & 400 & 6.635 & 6.650 & 0 & 29 \\ 
+Population & 400 & 264.840 & 147.376 & 10 & 509 \\ 
+Price & 400 & 115.795 & 23.677 & 24 & 191 \\ 
+Age & 400 & 53.322 & 16.200 & 25 & 80 \\ 
+Education & 400 & 13.900 & 2.621 & 10 & 18 \\ 
+\hline \\[-1.8ex] 
+\end{tabular} 
+\end{table} 
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Tue, Nov 01, 2022 - 09:22:32
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Sales \\ 
+\hline \\[-1.8ex] 
+ CompPrice & 0.093$^{***}$ \\ 
+  & (0.004) \\ 
+  & \\ 
+ Income & 0.011$^{***}$ \\ 
+  & (0.003) \\ 
+  & \\ 
+ Advertising & 0.070$^{***}$ \\ 
+  & (0.023) \\ 
+  & \\ 
+ Population & 0.0002 \\ 
+  & (0.0004) \\ 
+  & \\ 
+ Price & $-$0.101$^{***}$ \\ 
+  & (0.007) \\ 
+  & \\ 
+ ShelveLocGood & 4.849$^{***}$ \\ 
+  & (0.153) \\ 
+  & \\ 
+ ShelveLocMedium & 1.953$^{***}$ \\ 
+  & (0.126) \\ 
+  & \\ 
+ Age & $-$0.058$^{***}$ \\ 
+  & (0.016) \\ 
+  & \\ 
+ Education & $-$0.021 \\ 
+  & (0.020) \\ 
+  & \\ 
+ UrbanYes & 0.140 \\ 
+  & (0.112) \\ 
+  & \\ 
+ USYes & $-$0.158 \\ 
+  & (0.149) \\ 
+  & \\ 
+ Income:Advertising & 0.001$^{***}$ \\ 
+  & (0.0003) \\ 
+  & \\ 
+ Price:Age & 0.0001 \\ 
+  & (0.0001) \\ 
+  & \\ 
+ Constant & 6.576$^{***}$ \\ 
+  & (1.009) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 400 \\ 
+R$^{2}$ & 0.876 \\ 
+Adjusted R$^{2}$ & 0.872 \\ 
+Residual Std. Error & 1.011 (df = 386) \\ 
+F Statistic & 209.988$^{***}$ (df = 13; 386) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
+
+
+\end{document}
+
